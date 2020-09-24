@@ -6,8 +6,6 @@ const path = require('path');
 // Initializations
 const app = express();
 
-app.use(require('./routes/routes'));
-
 // Conecto to Database
 // require('./mongooseDatabase');
 
@@ -28,6 +26,9 @@ app.use(express.json());
 
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));
+
+//Routes
+app.use(require('./routes/routes'));
 
 //  404 Handler Error
 app.use((req, res, next) => {

@@ -1,3 +1,4 @@
-MONGODB_URI=mongodb://localhost/mail
 PORT=3000
 NODE_ENV=production
+MAIL=emailRamdom
+PASS_MAIL=passRandom
