@@ -1,0 +1,3 @@
+MONGODB_URI=mongodb://localhost/mail
+PORT=3000
+NODE_ENV=production
